@@ -2249,7 +2249,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  }
   }
   
-  @media(max-width:499px){
+  /* @media(max-width:499px){
 	  html,
 	  body.page-template-template-glavnaya,
 	  body.page-template-template-glavnaya .site,
@@ -2262,7 +2262,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  .mainTours{
 		  display: none;
 	  }
-  }
+  } */
   
   .mainTours {
 	  background: #000;
@@ -2289,11 +2289,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 
   .mainTours .column-left {
-	  width: 20%;
+	  width: 21%;
   }
 
   .mainTours .column-center {
-	width: 55%;
+	width: 51%;
 	
 	display: flex;
     flex-direction: row;
@@ -2302,7 +2302,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 
   .mainTours .column-right {
-	width: 25%;
+	width: 28%;
 	
   }
 
@@ -2406,8 +2406,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
-
   
   .slide.loop-tour {
 	  height: 285px;
@@ -2479,441 +2477,113 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .site-navigation-desktop{
 	  display: none;
   }
-/*   
-  @media(min-width:500px){
-	  .mainSlider{
-		  display: none;
-	  }
-	  .loop-tour--width2 { width: 90%; }
-  
-	  .loop-tour {
-			  position: relative;
-			  width:48%;
-			  min-height: 285px;
-			  margin: 1%;
-	  }
-	  .loop-tour.long{
-		  width:98%;
-	  }
-	  .loop-tour.high{
-		  height: 570px;
-	  }
-	  .loop-tour.squareLarge{
-		  height: 570px;
-		  width:98%;
-	  }
-	  
-	  
-	  .slide.tourFormSlide.loop-tour {
-			  width:98%;
-			  height: 285px;
-			  background-position: center bottom;
-	  }
-  } */
-/* 
-  @media screen and (min-width: 37.5em) {
-	  .site-navigation-desktop{
-		  display: block;
-	  }
-	  .menu-main-container {
-			  margin-top: 0;
-	  }
-	  #primary-menu {
-			  padding: 0;
-			  display: flex;
-			  justify-content: space-between;
-			  list-style-type: none;
-			  margin: 0;
-	  }
-	  #primary-menu li{
-		  margin: 0 10px;
-	  }
-	  #primary-menu li a{
-		  font-family: Raleway;
-		  font-style: normal;
-		  font-weight: 500;
-		  font-size: 20px;
-		  line-height: 21px;
-		  text-align: center;
-		  color: #000000;
-		  text-decoration: none;
-	  }
-  } */
 
-  @media(min-width:720px){
-	  .mainSlider{
-		  display: none;
-	  }
-	  .loop-tour.long{
-		  width:65%;
-	  }
-	  .loop-tour.high{
-		  height: 570px;
-	  }
-	  .loop-tour.squareLarge{
-		  height: 570px;
-		  width:98%;
-	  }
-  
-	  .loop-tour {
-			  position: relative;
-			  width:32%;
-			  /* min-height: 285px; */
-			  /* margin: 0.5%; */
-	  }
-  
-	  .slide.tourFormSlide.loop-tour {
-			  /* width:65%; */
-			  /* height: 285px; */
-			  /* background-position: center bottom 89%; */
-	  }
-	/* .gallery a:first-child img {	
-			  max-width: 300px;
-			  margin: 7px;
-			  max-height: 150px;
-			  object-fit: cover;
-	  }
-	  .gallery a:not(:first-child) {
-			  width: auto;
-			  margin: 7px;
-	  }
-	  .gallery {
-			  justify-content: flex-start;
-	  } */
-  }
-  
-
-  @media(min-width:920px){
-	  /* .mainSlider{
-		  display: none;
-	  }
-	  .loop-tour--width2 { width: 90%; }
-  
-	  .loop-tour {
-			  position: relative;
-			  width:24%;
-			  min-height: 285px;
-			  margin: 0.5%;
-	  }
-   */
-	  .slide.tourFormSlide.loop-tour {
-			  /* width:49%; */
-			  /* height: 285px; */
-			  /* background-position: center bottom 89%; */
-	  }
-/* 	  
-	  .contentWrapper {
-			  display: flex;
-			  justify-content: center;
-			  align-items: flex-start;
-			  max-width: 1080px;
-			  margin: 0 auto;
-			  padding: 0 20px;
-			  background: #1F1F1F;
-	  }
-	  .contentWrap {
-			  background: transparent;
-			  padding: 0;
-	  }
-	  .box {
-			  margin: 0;
-	  }
-	  .info1 {
-			  width: 100%;
-			  padding: 15px 10px;
-	  }
-	  .boxHeaderMobile {
-			  display: none;
-	  }
-	  .boxHeaderDesktop .flex {
-			  display: flex;
-			  justify-content: space-between;
-			  align-items: center;
-			  padding-right: 30px;
-	  }
-	  .availableDesktop {
-			  background-image: url("/wp-content/themes/snami/img/avail-bg.png");
-			  display: flex;
-			  height: 61px;
-			  width: 180px;
-			  display: flex;
-			  justify-content: center;
-			  align-items: center;
-			  background-size: contain;
-			  background-repeat: no-repeat;
-			  padding-right:15px; 
-	  }
-	   .availableDesktop p{
-		  font-family: Raleway;
-		  font-style: normal;
-		  font-weight: 500;
-		  font-size: 16px;
-		  line-height: 19px;
-		  text-align: center;
-		  color: #FFFFFF;
-		  margin: 0;
-	   }
-	  .boxHeaderDesktop {
-			  display: block;
-			  margin: -33px -20px 0 -20px;
-	  }
-	  
-	  .boxHeaderDesktop .date{
-		  font-style: normal;
-		  font-weight: normal;
-		  font-size: 14px;
-		  line-height: 13px;
-  
-		  text-align: center;
-  
-		  color: rgba(0, 0, 0, 0.6);
-		  margin: 16px 0 0;
-	  }
-	  .boxHeaderDesktop .orderButtonDesktop{
-		  font-family: Roboto;
-		  font-style: normal;
-		  font-weight: 500;
-		  font-size: 14px;
-		  line-height: 16px;
-  
-		  display: flex;
-		  align-items: center;
-		  text-align: center;
-		  text-transform: uppercase;
-  
-		  color: #FF0000;
-		  text-decoration: none;
-		  border: 1px solid #FF0000;
-		  box-sizing: border-box;
-		  border-radius: 50px;
-		  padding:13px 27px;
-		  margin-top: 16px;
-	  }
-	  .contentWrap h2 {
-			  padding-left: 20px;
-			  margin-top: 50px;
-	  }  
-	  .contentWrap .orderButton {
-			  display: none;
-	  }
-	  .single-tour .site-content {
-			  background: #000;
-	  }
-	  .single-tour .contentWrapper {
-			  background: none;
-			  margin: -60px auto 0;
-			  align-items: stretch;
-	  }
-	  .single-tour .box {
-			  border-radius: 0;
-	  }
-	  .moreInfoBlock {
-			  flex-direction: column;
-			  border-radius: 0 0 50px 50px;
-			  margin-bottom: -40px;
-	  }
-	  .info1 {
-			  min-width: 200px;
-	  }
-	  
-	  .moreInfoBlock .orderButton {
-			  background: #FF3333;
-			  box-shadow: 0px 5px 20px rgba(255, 0, 0, 0.3);
-			  border-radius: 50px;
-			  font-family: Roboto;
-			  font-style: normal;
-			  font-weight: 500;
-			  line-height: normal;
-			  font-size: 14px;
-			  text-align: center;
-			  text-transform: uppercase;
-			  color: #FFFFFF;
-			  border: none;
-			  padding: 15px 34px;
-			  text-decoration: none;
-			  max-width: 140px;
-			  margin: auto auto -50px;
-	  }
-	  .gallery {
-			  width: 900px;
-			  margin: 0 auto;
-	  }
-	  .gallery a:first-child img, .gallery a:not(:first-child) img {
-			  width: 300px;
-			  max-width: 270px;
-			  margin: 7px;
-			  height: 220px;
-			  object-fit: cover;
-			  max-height: 170px;
-	  }
-	  .gallery a:not(:first-child) {
-	  width: auto;
-	  margin: 0;
-	  }
-  
-	  .availableWrap{
-		  display: none;
-	  }
-	  
-	  .desktopReviewName,.reviewIconDesktop{
-		  display: block;
-	  }
-	  .singleReview .info{
-		  display: none;
-	  }
-	  .owl-carousel .owl-item .reviewIconDesktop img {
-			  width: 50px;
-			  border-radius: 100%;
-			  border: 4px solid #0082FA;
-			  margin-bottom: 20px;
-	  }
-	  .reviewContent {
-			  color: #000000;
-			  background: #fff;
-			  margin-top: 25px;
-			  font-family: Open Sans;
-			  font-style: normal;
-			  font-weight: normal;
-			  font-size: 11px;
-			  line-height: 19px;
-			  letter-spacing: -0.01em;
-	  }
-	  .reviewIconDesktop {
-			  margin-top: -54px;
-	  }
-	  .desktopReviewName .name{
-		  font-family: Open Sans;
-		  font-style: normal;
-		  font-weight: bold;
-		  font-size: 14px;
-		  line-height: 25px;
-		  color: #000000;
-		  margin-top: 25px;
-	  }
-	  .desktopReviewName .link{
-		  font-family: Open Sans;
-		  font-style: normal;
-		  font-weight: 300;
-		  font-size: 11px;
-		  line-height: 19px;
-  
-  
-		  color: #000000;
-	  }
-		  
-	  .reviews .owl-stage{
-		  margin-left: -50px;
-	  }
-	  body .owl-theme .owl-dots .owl-dot.active span, 
-	  .owl-theme .owl-dots .owl-dot:hover span {
-			  background: transparent;
-			  border: 2px solid rgba(255, 255, 255, 0.590438);
-	  }
-	  body .owl-theme .owl-dots .owl-dot span {
-		  background: #0082FA;
-	  }
-	  
-	  .cta p {
-			  font-family: Raleway;
-			  font-style: normal;
-			  font-weight: 600;
-			  font-size: 40px;
-			  line-height: 66px;
-			  text-align: center;
-			  color: #FFFFFF;
-			  max-width: 925px;
-			  margin: 0 auto 50px;
-	  }
-	  .owl-theme .owl-nav.disabled + .owl-dots {
-			  margin-top: 40px;
-	  }
-	  #colophon {
-			  background: transparent;
-	  }
-	  .single-tour .site-content {
-			  background: transparent;
-	  }
-	  .single-tour{
-			  background: 
-				  url(/wp-content/themes/snami/img/stbg.png) right bottom no-repeat,
-				  url(/wp-content/themes/snami/img/stbg1.png) left bottom no-repeat,
-				  url(/wp-content/themes/snami/img/stbg2.png) right top 38% no-repeat,
-				  url(/wp-content/themes/snami/img/stbg3.png) left 5% top 17% no-repeat,
-				  url(/wp-content/themes/snami/img/stbg4.png) left center no-repeat,
-				  #000
-	  }
-	  .reviews h2{
-		  font-family: Raleway;
-		  font-style: normal;
-		  font-weight: bold;
-		  font-size: 40px;
-		  line-height: 47px;
-		  text-align: center; 
-		  color:#fff;
-		  margin-top: 80px;
-	  }
-	  .titleFooter {
-			  display: none;
-	  }
-	  .singleTourWrap .postTitle {
-			  padding: 90px 15px;
-	  }
-	  body .modal {	
-			  background: transparent;	
-	  }
-	  #primary-menu li{
-		  margin: 0 20px;
-	  } */
-
+  .mainSlider{
+	display: none;
   }
 
-  
-  @media(min-width:1200px){
-	  #primary-menu li{
-		  /* margin: 0 30px; */
-	  }
-	  .mainSlider{
-		  /* display: none; */
-	  }
-	  /* .loop-tour--width2 { width: 90%; } */
-  
-	  .loop-tour {
-			  /* position: relative;
-			  width:19.5%;
-			  min-height: 285px;
-			  margin: 0.25%; */
-	  }
-  
-	  .slide.tourFormSlide.loop-tour {
-			  /* width:39.5%; */
-			  /* height: 285px; */
-			  /* background-position: center bottom 89%; */
-	  }
+
+@media(max-width: 1150px){
+	.mainTours .column-left {
+		width: 33.33%;
+	}
+	.mainTours .column-center {
+		width: 66.66%;
+	}
+	.mainTours .column-right {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.mainTours .slide.palce_wakeboarding,
+	.mainTours .slide.palce_travel-map,
+	.mainTours .slide.palce_choose {
+		height: auto;
+		width: 33.33%;
+	}
   }
+
+@media(max-width: 1000px) {
+	body .tourSelectButton {
+		content: "Подбро тура";
+	}
+}
+
+@media(max-width: 768px) {
+	.mainTours .column-center > .flex-container:first-child {
+		height: 48%;
+	}	
+
+	.mainTours .column-center > .flex-container:last-child {
+		height: 52%;
+	}
+	
+	.mainTours .slide.palce_bukovel,
+	.mainTours .slide.palce_skates {
+		width: 50%;
+	}
+
+	.mainTours .column-center .left_bottom {
+		width: 50%;
+	}
+	
+	.mainTours .slide.palce_gudauri {
+		width: 50%;
+	}	
+
+}
+
+
+@media(max-width: 650px){
+	
+	.mainTours .column-left,
+	.mainTours .column-center .left_bottom,
+	.mainTours .column-center,
+	.mainTours .column-right, 
+	.mainTours .column-center > .flex-container:first-child,
+	.mainTours .column-center > .flex-container:last-child { 
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+	
+	.mainTours .slide.palce_dragobrat,
+	.mainTours .slide.palce_greece,
+	.mainTours .slide.palce_paintball,
+	.mainTours .slide.palce_bukovel,
+	.mainTours .slide.palce_skates,
+	.mainTours .slide.palce_volyn,
+	.mainTours .slide.palce_rafting,
+	.mainTours .slide.palce_gudauri,
+	.mainTours .slide.palce_wakeboarding,
+	.mainTours .slide.palce_travel-map,
+	.mainTours .slide.palce_choose {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	.mainTours .slide.palce_dragobrat .wrap,
+	.mainTours .slide.palce_greece .wrap,
+	.mainTours .slide.palce_paintball .wrap,
+	.mainTours .slide.palce_bukovel .wrap,
+	.mainTours .slide.palce_skates .wrap,
+	.mainTours .slide.palce_volyn .wrap,
+	.mainTours .slide.palce_rafting .wrap,
+	.mainTours .slide.palce_gudauri .wrap,
+	.mainTours .slide.palce_wakeboarding .wrap,
+	.mainTours .slide.palce_travel-map .wrap,
+	.mainTours .slide.palce_choose .wrap {
+		min-height: 285px;
+	}
+	
+	
+
+}
+
+	
+	
+}
   
-  @media(min-width:1500px){
-	  .mainSlider{
-		  /* display: none; */
-	  }
-	  /* .loop-tour--width2 { width: 90%; } */
-  
-	  /* .loop-tour {
-			  position: relative;
-			  width:16%;
-			  min-height: 285px;
-			  margin: 0.25%;
-			  max-width: 285px;
-	  }
-   */
-	  .slide.tourFormSlide.loop-tour {
-			  /* width:32.5%; */
-			  /* height: 285px; */
-			  /* background-position: center bottom 89%; */
-			  /* max-width: calc(0.5% + 570px); */
-	  }
-	  html{
-	   /* background: #000;    */
-	  }
-  }
   
   
