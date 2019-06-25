@@ -1304,41 +1304,44 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  padding: 1px 19px;
 	  margin: 0;
   }
-  
-  .slide .title2{
-		  font-family: Raleway;
-		  font-style: normal;
-		  font-weight: bold;
-		  line-height: 42px;
-		  font-size: 40px;
-		  margin: 0;
-		  color: #FFFFFF;
+/*   
+  .slide .title2 {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 42px;
+	font-size: 40px;
+	margin: 0;
+	color: #FFFFFF;
+  } */
+
+  .slide .title2 {
+	font-family: Raleway;
+
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+
+	margin: 0 0 10px;
+	color: #FFFFFF;
   }
   
   .slide .time {
-	  font-family: Raleway;
-	  font-style: normal;
-	  font-weight: 500;
-	  line-height: 12px;
-	  font-size: 15px;
-	  text-align: center;
-	  margin: 0 0 30px;
-	  color: #FFFFFF;
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 12px;
+	font-size: 15px;
+	text-align: left;
+	margin: 0 0 30px;
+	color: #FFFFFF;
   }
   
   .menu-main-container {
 	  margin-top: 4vh;
   }
   
-  .slide .title2 {
-	  font-family: Raleway;
-	  font-style: normal;
-	  font-weight: bold;
-	  line-height: 36px;
-	  font-size: 36px;
-	  margin: 0 0 10px;
-	  color: #FFFFFF;
-  }
   
   body .iWant {
 	  font-family: Roboto;
@@ -1364,7 +1367,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  display: flex;
 	  justify-content: center;
 	  align-items: flex-start;
-	  padding: 25px 15px 15px;
+	  /* padding: 25px 15px 15px; */
+	  padding: 25px 10px 15px 30px;
 	  font-family: Raleway;
 	  font-style: normal;
 	  font-weight: normal;
@@ -1402,10 +1406,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
   
   .placesLeft .svg {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-		  fill: #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+	fill: #000;
+  }
+
+  .placesLeft .bg_free_places {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	/* width: 99px; */
+	/* height: 88px; */
   }
   
   .template-tourform-my{
@@ -2306,6 +2318,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	height: 100%;
   }
 
+  .mainTours .wrap {
+	/* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+  }
+
   .mainTours .slide.palce_dragobrat {
 	height: 33.33%;
   }
@@ -2414,12 +2432,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
   
   .slide.loop-tour .title2 {
-	  line-height: 26px;
-	  font-size: 20px;
+	line-height: 26px;
+	font-size: 20px;
+	/* font-size: 30px; */
+	/* line-height: 35px; */
   }
+
   .slide.loop-tour .title1 {
 	  font-size: 15px;
   }
+
+  .slide.loop-tour .title3 {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 37px;
+	color: #FFFFFF;
+  }
+
   
   #masthead {
 	  padding: 0;
