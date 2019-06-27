@@ -1295,13 +1295,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
   
   .slide .price {
+	  display: inline-block;
 	  font-family: Open Sans Condensed;
+	  /* font-family: "Open Sans"; */
 	  line-height: normal;
-	  font-size: 26px;
+	  /* font-size: 26px; */
+	  font-size: 20px;
+	  line-height: 27px;
 	  background: #FF3333;
 	  border-radius: 50px;
 	  color: #FFFFFF;
-	  padding: 1px 19px;
+	  padding: 2px 19px;
 	  margin: 0;
   }
 /*   
@@ -1326,13 +1330,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin: 0 0 10px;
 	color: #FFFFFF;
   }
+
+  .slide.loop-tour .title3,
+  .slide .title3 {
+	font-family: Open Sans Condensed, Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 37px;
+	color: #FFFFFF;
+	margin: 0 0 30px;
+  }
+  
   
   .slide .time {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 12px;
 	font-size: 15px;
+	line-height: 18px;
 	text-align: left;
 	margin: 0 0 30px;
 	color: #FFFFFF;
@@ -1367,8 +1381,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  display: flex;
 	  justify-content: center;
 	  align-items: flex-start;
-	  /* padding: 25px 15px 15px; */
-	  padding: 25px 10px 15px 30px;
+	  padding: 25px 9px 7px 50px;
+	  
 	  font-family: Raleway;
 	  font-style: normal;
 	  font-weight: normal;
@@ -1378,33 +1392,43 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  flex-direction: column;
   }
   
-  .placesLeft span{
-	  z-index: 2;
+  .placesLeft .text {
+	z-index: 2;
+
+	font-family: inherit;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 9px;
+	letter-spacing: 0.1em;
   }
-  .placesLeft span span{
-	  font-weight: bold;
-	  display: block;
-	  margin: 7px 0 0;
-		  font-size: 18px;
+
+  .placesLeft .text .num {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 2px 0 0;
   }
   
   body .tourSelectButton {
-	  font-family: Roboto;
-	  font-style: normal;
-	  font-weight: 500;
-	  line-height: normal;
-	  font-size: 14px;
-	  text-align: center;
-	  text-transform: uppercase;
-	  border-radius: 3px;
-	  color: #FFFFFF;
-	  border: none;
-	  margin-top: 20px;
-	  padding: 13px 22px;
-		  text-decoration: none;
-		  background: #0082FA;
+	display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 27px;
+    padding: 10px 7%;
+    text-decoration: none;
+    background: #0082FA;
   }
-  
+
   .placesLeft .svg {
 	position: absolute;
 	right: 0;
@@ -2426,26 +2450,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	background-position: center top;
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding: 30px 10%;
+
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   
   .slide.loop-tour .title2 {
-	line-height: 26px;
-	font-size: 20px;
+	/* line-height: 26px; */
+	/* font-size: 20px; */
 	/* font-size: 30px; */
 	/* line-height: 35px; */
   }
 
   .slide.loop-tour .title1 {
 	  font-size: 15px;
+	  text-shadow: 1px 5px 5px rgba(35, 35, 35, 0.5);
   }
 
-  .slide.loop-tour .title3 {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	line-height: 37px;
-	color: #FFFFFF;
-  }
+ 
 
   
   #masthead {
@@ -2504,12 +2529,30 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 
 @media(max-width: 1000px) {
-	body .tourSelectButton {
-		content: "Подбро тура";
+	.slide.loop-tour .wrap {
+		padding: 20px 4% 27px 8%;
 	}
+
+	body .tourSelectButton {
+		word-spacing: -999px;
+		letter-spacing: -999px; 
+	}
+	
+	body .tourSelectButton:after {
+		content: "Подбор тура";
+		visibility: visible;
+		word-spacing: normal;
+		letter-spacing: normal;	
+		background: #0082FA;								
+	}
+
 }
 
 @media(max-width: 768px) {
+	.slide.loop-tour .wrap {
+		padding: 18px 4% 27px 6%;
+	}
+
 	.mainTours .column-center > .flex-container:first-child {
 		height: 48%;
 	}	
@@ -2531,10 +2574,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		width: 50%;
 	}	
 
+	.slide .title2 {
+		font-size: 27px;
+		line-height: 28px;
+	}
+
+	.placesLeft {
+		padding: 25px 9px 7px 35px;
+	}
+
+	body .iWant {
+		padding: 10px 24px;
+	}	
 }
 
 
-@media(max-width: 650px){
+@media(max-width: 650px) {
 	
 	.mainTours .column-left,
 	.mainTours .column-center .left_bottom,
@@ -2583,7 +2638,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 	
 	
-}
+
   
   
   
